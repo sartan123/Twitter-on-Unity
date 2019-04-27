@@ -165,7 +165,7 @@ namespace RetweetIncludeImage
 
     public class User
     {
-        public int id { get; set; }
+        public long id { get; set; }
         public string id_str { get; set; }
         public string name { get; set; }
         public string screen_name { get; set; }

@@ -84,6 +84,7 @@ namespace Twitter
         private const string REQUEST_TOKEN = "https://api.twitter.com/oauth/request_token";
         private const string UPDATE_STATUS = "https://api.twitter.com/1.1/statuses/update.json";
 
+        private const string GET_HOME_TIMELINE = "https://api.twitter.com/1.1/statuses/home_timeline.json";
         private const string GET_USER_TIMELINE = "https://api.twitter.com/1.1/statuses/user_timeline.json";
         private const string GET_TWEET_FROM_ID = "https://api.twitter.com/1.1/statuses/show.json";
         private const string GET_FOLLOWE_IDS = "https://api.twitter.com/1.1/friends/ids.json";
@@ -207,6 +208,18 @@ namespace Twitter
             }
 
             return OAuthWebRequest(METHOD.POST, UPDATE_STATUS, query, "") != "";
+        }
+
+        public string GetHomeTimeLine()
+        {
+            string query =  System.String.Format("?trim_user=true&exclude_replies=true");
+            return OAuthWebRequest(METHOD.GET, GET_HOME_TIMELINE + query, "", "");
+        }
+
+        public string GetHomeTimeLine(long max_id)
+        {
+            string query = System.String.Format("?max_id={0}&trim_user=true&exclude_replies=true", UrlEncode(max_id.ToString()));
+            return OAuthWebRequest(METHOD.GET, GET_HOME_TIMELINE + query, "", "");
         }
 
         public string GetUserTimeLine(string screen_name)

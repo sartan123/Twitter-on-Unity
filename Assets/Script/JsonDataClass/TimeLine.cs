@@ -77,7 +77,7 @@ namespace TimeLine
 
     public class User
     {
-        public int id { get; set; }
+        public long id { get; set; }
         public string id_str { get; set; }
         public string name { get; set; }
         public string screen_name { get; set; }
@@ -205,7 +205,7 @@ namespace TimeLine
 
     public class User2
     {
-        public object id { get; set; }
+        public long id { get; set; }
         public string id_str { get; set; }
         public string name { get; set; }
         public string screen_name { get; set; }
@@ -306,7 +306,7 @@ namespace TimeLine
 
     public class Medium5
     {
-        public object id { get; set; }
+        public long id { get; set; }
         public string id_str { get; set; }
         public List<int> indices { get; set; }
         public string media_url { get; set; }
@@ -328,7 +328,7 @@ namespace TimeLine
     public class RetweetedStatus
     {
         public string created_at { get; set; }
-        public object id { get; set; }
+        public long id { get; set; }
         public string id_str { get; set; }
         public string text { get; set; }
         public bool truncated { get; set; }
@@ -392,7 +392,7 @@ namespace TimeLine
 
     public class Medium7
     {
-        public object id { get; set; }
+        public long id { get; set; }
         public string id_str { get; set; }
         public List<int> indices { get; set; }
         public string media_url { get; set; }

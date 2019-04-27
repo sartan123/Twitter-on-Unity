@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TweetDetail.unity
     guid: 2940ace726866479fb1594609b005e65
+  - enabled: 1
+    path: Assets/Scenes/TweetScreen.unity
+    guid: 038b4fbf658314359887d744bdcc46d4
+  - enabled: 1
+    path: Assets/Scenes/HomeMenu.unity
+    guid: b86bae5e2f1684a0d868ac965851c94b
+  - enabled: 1
+    path: Assets/Scenes/HomeTimeLine.unity
+    guid: 51625f2d51dc94a98b9d202a261021bd
   m_configObjects: {}
