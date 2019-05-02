@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{52C57603-1CB3-7587-A6F9-1532C0F07DF1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/CameraMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Prefab/Tweet.cs">
     <Files>
       <File FileName="Assets/Script/HomeTilmeLineController.cs" Line="21" Column="1" />
       <File FileName="Assets/Script/CameraMove.cs" Line="7" Column="31" />
+      <File FileName="Assets/Script/Prefab/Tweet.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,8 +11,9 @@
           <Node name="Twitter-on-Unity" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
-                <Node name="Prefab" expanded="True" />
-                <Node name="CameraMove.cs" selected="True" />
+                <Node name="Prefab" expanded="True">
+                  <Node name="Tweet.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -21,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="83639cb5-425b-4fe2-8fcc-512061865506" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="50caa67e-fbc8-4920-b484-3b44a99fd86c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

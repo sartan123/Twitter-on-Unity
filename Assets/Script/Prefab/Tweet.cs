@@ -86,11 +86,13 @@ namespace Twitter
                 switch (child.name)
                 {
                     case "UserName":
-                        target = child.GetComponent<Text>();
+                        button = child.GetComponent<Button>();
+                        target = button.GetComponentInChildren<Text>();
                         target.text = tweet.user.name;
                         break;
                     case "ScreenName":
-                        target = child.GetComponent<Text>();
+                        button = child.GetComponent<Button>();
+                        target = button.GetComponentInChildren<Text>();
                         target.text = "@" + tweet.user.screen_name;
                         break;
                     case "Context":
@@ -130,12 +132,14 @@ namespace Twitter
                 switch (child.name)
                 {
                     case "UserName":
-                        target = child.GetComponent<Text>();
-                        target.text = tweet.retweeted_status.user.name;
+                        button = child.GetComponent<Button>();
+                        target = button.GetComponentInChildren<Text>();
+                        target.text = tweet.user.name;
                         break;
                     case "ScreenName":
-                        target = child.GetComponent<Text>();
-                        target.text = "@" + tweet.retweeted_status.user.screen_name;
+                        button = child.GetComponent<Button>();
+                        target = button.GetComponentInChildren<Text>();
+                        target.text = "@" + tweet.user.screen_name;
                         break;
                     case "Context":
                         target = child.GetComponent<Text>();
@@ -175,11 +179,13 @@ namespace Twitter
                 switch (child.name)
                 {
                     case "UserName":
-                        target = child.GetComponent<Text>();
+                        button = child.GetComponent<Button>();
+                        target = button.GetComponentInChildren<Text>();
                         target.text = tweet.user.name;
                         break;
                     case "ScreenName":
-                        target = child.GetComponent<Text>();
+                        button = child.GetComponent<Button>();
+                        target = button.GetComponentInChildren<Text>();
                         target.text = "@" + tweet.user.screen_name;
                         break;
                     case "Context":
@@ -231,12 +237,14 @@ namespace Twitter
                 switch (child.name)
                 {
                     case "UserName":
-                        target = child.GetComponent<Text>();
-                        target.text = tweet.retweeted_status.user.name;
+                        button = child.GetComponent<Button>();
+                        target = button.GetComponentInChildren<Text>();
+                        target.text = tweet.user.name;
                         break;
                     case "ScreenName":
-                        target = child.GetComponent<Text>();
-                        target.text = "@" + tweet.retweeted_status.user.screen_name;
+                        button = child.GetComponent<Button>();
+                        target = button.GetComponentInChildren<Text>();
+                        target.text = "@" + tweet.user.screen_name;
                         break;
                     case "Context":
                         target = child.GetComponent<Text>();
